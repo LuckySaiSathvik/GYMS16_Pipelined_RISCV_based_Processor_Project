@@ -13,7 +13,7 @@ My contribution in this project involved designing the ISA and the datapath alon
 
 1) Edit "1_test_program.asm" based on your working (refer to the ISA and make changes).
 2) Now run: **python3 2_gyms16_assembler.py** ; the process is successful if you get "Machine code written to 3_test_output.bin".
-3) Now run: **iverilog 5_processor_testbench.v** ; the process is succesful if you don't get any errors.
+3) Now run: **iverilog -o 6_processor_wave 5_processor_testbench.v** ; the process is succesful if you don't get any errors.
 4) Now run: **vvp 6_processor_wave** ; the process is succesful if you don't get any errors.
 5) Finally run: **gtkwave 7_processor_waveform.vcd** ; and check for the required signals' movement as per your choice in the new window opened.
 
